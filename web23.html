@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Cenaswesley 2022</title>
 
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img & icon/Logo office cenas.png" type="image/x-icon">
+
         <!--==================== fontawesome ====================-->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -1039,17 +1042,18 @@
 
         
 
-            <form action="index.html" class="contact__form">
+            <form action="https://formspree.io/f/meqnnbrp" method="POST" class="contact__form">
                  <h1 class="contact__formtitle ">Message</h1>
-                <input type="text" class="form-input" placeholder="Your Name" required>
-                <input type="email" class="form-input " placeholder="Your Email" required>
+                <input type="text" name = "name" class="form-input" placeholder="Your Name" required>
+                <input type="email" name = "email" class="form-input " placeholder="Your Email" required>
           
                 <textarea placeholder="Project Details" name="" id="" class="form-input form__area"required></textarea>
           
-                <div class="contact__btnsend">
+                
+                <button class="contact__btnsend" name = "Email Address" type="submit">
                     <img src="assets/img & icon/contact/mail-send.png" class="contact__send" alt="">
-                </div>
-          
+                </button>
+                
           
               </form>
         </div>
@@ -1108,6 +1112,9 @@
         /*==================== swiper ====================*/
 
             var swiper = new Swiper(".mySwiper", {
+
+                grabCursor:true,
+                centeredSlides:true,
                 spaceBetween:0,
                 slidesPerView:3,
                 loop:true,
